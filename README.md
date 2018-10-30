@@ -1,18 +1,64 @@
 # bitbar-docker-ps
 
+<p align="center">
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 A plugin for [BitBar](https://getbitbar.com/) to display the running Docker containers.
 
 ![Screenshot of BitBar](/screenshot.png?raw=true "BitBar with bitbar-docker-ps")
+</p>
 
-## Usage
+## Installation
 
 Requires Docker, for obvious reasons.
 
 Requires Node. So far, only tested with version 10.10.
 
-TODO
+Go to your BitBar plugin directory:
+```sh
+$ cd "$(defaults read com.matryer.BitBar pluginsDirectory)"
+```
+
+Clone the plugin into your BitBar plugin directory:
+```sh
+$ git clone https://github.com/colbin8r/bitbar-docker-ps
+```
+
+Install dependencies:
+```sh
+$ cd bitbar-docker-ps
+$ npm i
+```
+
+Activate the plugin with a symlink:
+```
+$ cd ..
+$ ln -s bitbar-docker-ps/dockerps.10s.js
+```
+
+Refresh your BitBar to verify everything works!
+
+### Changing the update interval
+
+By default, the plugin refreshes every 10 seconds. You can always open the dropdown and manually refresh it if you like.
+
+The [update interval is encoded in the name](https://github.com/matryer/bitbar#configure-the-refresh-time) of the file in the BitBar plugins directory. To change it, just change the name of the symlink:
+
+```sh
+$ cd "$(defaults read com.matryer.BitBar pluginsDirectory)"
+$ mv dockerps.10s.js dockerps.1m.js # Change to 1 minute
+```
+
+### Uninstalling
+
+Remove the symlink and plugin folder:
+```
+$ cd "$(defaults read com.matryer.BitBar pluginsDirectory)"
+$ rm dockerps.10s.js
+$ rm -rf bitbar-docker-ps
+```
+
+## Usage
 
 ## Features
 
