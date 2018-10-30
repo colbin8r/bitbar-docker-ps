@@ -1,6 +1,6 @@
 {
   "name": "bitbar-docker-ps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Docker PS for your BitBar",
   "author": "Colby Rogness <colbyrogness@gmail.com>",
   "license": "MIT",
