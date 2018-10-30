@@ -8,14 +8,14 @@
 A plugin for [BitBar](https://getbitbar.com/) to display the running Docker containers.
 </p>
 
----
-
+<p align="center">
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/colbin8r/bitbar-docker-ps.svg)
 ![GitHub issues](https://img.shields.io/github/issues/colbin8r/bitbar-docker-ps.svg)
 ![node](https://img.shields.io/node/v/bitbar-docker-ps.svg)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+</p>
 
-
+---
 
 ## Installation
 
