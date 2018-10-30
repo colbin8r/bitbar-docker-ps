@@ -9,8 +9,8 @@ A plugin for <a href="https://getbitbar.com/">BitBar</a> to display the running
 </p>
 
 <p align="center">
-	<a href="/colbin8r/bitbar-docker-ps/releases"><img src="https://img.shields.io/github/tag/colbin8r/bitbar-docker-ps.svg" alt="GitHub tag (latest SemVer)" /></a>
-	<a href="/colbin8r/bitbar-docker-ps/issues"><img src="https://img.shields.io/github/issues/colbin8r/bitbar-docker-ps.svg" alt="GitHub issues" /></a>
+	<a href="https://github.com/colbin8r/bitbar-docker-ps/releases"><img src="https://img.shields.io/github/tag/colbin8r/bitbar-docker-ps.svg" alt="GitHub tag (latest SemVer)" /></a>
+	<a href="https://github.com/colbin8r/bitbar-docker-ps/issues"><img src="https://img.shields.io/github/issues/colbin8r/bitbar-docker-ps.svg" alt="GitHub issues" /></a>
 	<img src="https://img.shields.io/node/v/bitbar-docker-ps.svg" alt="node version" />
 	<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly" /></a>
 </p>
