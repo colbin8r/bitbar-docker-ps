@@ -1,9 +1,10 @@
 # bitbar-docker-ps
 
-<p style="text-align: center;">
-
+<p align="center">
 <img src="/screenshot.png?raw=true" alt="Screenshot of BitBar" align="center" />
+</p>
 
+<p align="center">
 A plugin for [BitBar](https://getbitbar.com/) to display the running Docker containers.
 </p>
 
