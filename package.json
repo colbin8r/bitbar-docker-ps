@@ -8,7 +8,8 @@
   "scripts": {
     "start": "./dockerps.10s.js",
     "test": "xo",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "preversion": "npm run test"
   },
   "files": [
     "dockerps.10s.js"
