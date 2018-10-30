@@ -1,0 +1,44 @@
+{
+  "name": "bitbar-docker-ps",
+  "version": "1.0.0",
+  "description": "Docker PS for your BitBar",
+  "author": "Colby Rogness <colbyrogness@gmail.com>",
+  "license": "MIT",
+  "repository": "colbin8r/bitbar-docker-ps",
+  "scripts": {
+    "start": "./dockerps.10s.js",
+    "test": "xo",
+    "commit": "git-cz"
+  },
+  "files": [
+    "dockerps.10s.js"
+  ],
+  "keywords": [
+    "bitbar",
+    "macos",
+    "osx",
+    "menubar",
+    "docker"
+  ],
+  "dependencies": {
+    "bitbar": "^0.3.0",
+    "dockerode": "^2.5.7"
+  },
+  "devDependencies": {
+    "commitizen": "^3.0.4",
+    "cz-conventional-changelog": "^2.1.0",
+    "xo": "^0.23.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "xo": {
+    "semicolon": false,
+    "esnext": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
