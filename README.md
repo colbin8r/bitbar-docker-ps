@@ -17,6 +17,15 @@ A plugin for <a href="https://getbitbar.com/">BitBar</a> to display the running
 
 ---
 
+## Features
+
+- [X] Number of containers running on your Mac status bar
+- [X] Container names, image, ID, and uptime
+- [X] Exposed ports and their host mapping
+- [X] Named volumes and bound volumes
+- [X] Logs, inspect, restart, and kill
+- [X] Refreshes every 10 seconds
+
 ## Installation
 
 Requires Docker, for obvious reasons.
@@ -67,13 +76,10 @@ $ rm dockerps.10s.js
 $ rm -rf bitbar-docker-ps
 ```
 
-## Usage
+## Status Bar Circle
 
-## Features
+**Solid Green:** `bitbar-docker-ps` connected to Docker on your machine and is listing your running containers! :100:
 
-- [X] Number of containers running on your Mac status bar
-- [X] Container names, image, ID, and uptime
-- [X] Exposed ports and their host mapping
-- [X] Named volumes and bound volumes
-- [X] Logs, inspect, restart, and kill
-- [X] Refreshes every 10 seconds
+**Hollow Green Circle:** `bitbar-docker-ps` connected to Docker on your machine, but there aren't any containers running.
+
+**Red Circle:** `bitbar-docker-ps` couldn't connect to Docker on your machine. Open the dropdown to see error information.
