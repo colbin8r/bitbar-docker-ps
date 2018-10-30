@@ -1,12 +1,19 @@
 # bitbar-docker-ps
 
 <p align="center">
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 A plugin for [BitBar](https://getbitbar.com/) to display the running Docker containers.
 
 ![Screenshot of BitBar](/screenshot.png?raw=true "BitBar with bitbar-docker-ps")
 </p>
+
+---
+
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/colbin8r/bitbar-docker-ps.svg)
+![GitHub issues](https://img.shields.io/github/issues/colbin8r/bitbar-docker-ps.svg)
+![node](https://img.shields.io/node/v/bitbar-docker-ps.svg)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+
 
 ## Installation
 
