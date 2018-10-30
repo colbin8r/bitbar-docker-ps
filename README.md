@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-A plugin for [BitBar](https://getbitbar.com/) to display the running Docker containers.
+A plugin for <a href="https://getbitbar.com/">BitBar</a> to display the running Docker containers.
 </p>
 
 <p align="center">
-![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/colbin8r/bitbar-docker-ps.svg)
-![GitHub issues](https://img.shields.io/github/issues/colbin8r/bitbar-docker-ps.svg)
-![node](https://img.shields.io/node/v/bitbar-docker-ps.svg)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+	<a href="/colbin8r/bitbar-docker-ps/releases"><img src="https://img.shields.io/github/tag/colbin8r/bitbar-docker-ps.svg" alt="GitHub tag (latest SemVer)" /></a>
+	<a href="/colbin8r/bitbar-docker-ps/issues"><img src="https://img.shields.io/github/issues/colbin8r/bitbar-docker-ps.svg" alt="GitHub issues" /></a>
+	<img src="https://img.shields.io/node/v/bitbar-docker-ps.svg" alt="node version" />
+	<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly" /></a>
 </p>
 
 ---
