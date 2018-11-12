@@ -163,7 +163,7 @@ async function dockerps() {
 					text: '0',
 					image: icons[GREEN_CIRCLE_HOLLOW]
 				},
-				bitbar.sep,
+				bitbar.separator,
 				refresh()
 			])
 			return
@@ -183,12 +183,12 @@ async function dockerps() {
 				image: icons[GREEN_CIRCLE_SOLID]
 			},
 			// Separator puts the rest in a dropdown
-			bitbar.sep,
+			bitbar.separator,
 			// Individual container status in the dropdown
 			...containers,
-			bitbar.sep,
+			bitbar.separator,
 			killAll(containers.length),
-			bitbar.sep,
+			bitbar.separator,
 			refresh()
 		])
 	} catch (error) {
@@ -199,14 +199,14 @@ async function dockerps() {
 				text: ' ',
 				image: icons[RED_CIRCLE_SOLID]
 			},
-			bitbar.sep,
+			bitbar.separator,
 			'Couldn\'t get list of Docker containers.',
 			'Maybe Docker isn\'t running?',
-			bitbar.sep,
+			bitbar.separator,
 			`Error code: ${error.code}`,
 			`Error no.: ${error.errno}`,
 			`Docker socket: ${error.address}`,
-			bitbar.sep,
+			bitbar.separator,
 			refresh()
 		])
 	}
