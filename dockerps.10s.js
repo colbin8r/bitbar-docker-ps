@@ -90,9 +90,15 @@ const containerFormatter = container => {
 	// PublicPort = HOST
 	// PublicPort = CONTAINER
 	// Sometimes the client only gives a private port, meaning the public/private are the same
+	if (container.Ports.length > 0) {
+		submenu.push(bitbar.separator)
+	}
 	container.Ports.forEach(port => submenu.push(`Port ${port.PublicPort || port.PrivatePort} -> ${port.PrivatePort}`))
 
 	// Handle bind and volume mounts
+	if (container.Mounts.length > 0) {
+		submenu.push(bitbar.separator)
+	}
 	container.Mounts.forEach(mount => {
 		let text = ''
 		let name = ''
@@ -136,6 +142,7 @@ const containerFormatter = container => {
 		{text: 'Restart...', cmd: 'restart', color: colors[YELLOW]},
 		{text: 'Kill...', cmd: 'kill', color: colors[RED]}
 	]
+	submenu.push(bitbar.separator)
 	actions.forEach(action => submenu.push(containerAction(action)))
 
 	// This removes a leading '/' in a container name (it's added by the client)
