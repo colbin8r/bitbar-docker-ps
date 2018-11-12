@@ -69,7 +69,7 @@ const refresh = () => {
 }
 
 // Returns a "Kill all" BitBar element
-const killAll = (numContainers) => {
+const killAll = numContainers => {
 	return {
 		text: `Kill ${numContainers ? numContainers : 'all'} containers...`,
 		bash: 'docker stop $(docker ps -aq)',
