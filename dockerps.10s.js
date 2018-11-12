@@ -68,6 +68,15 @@ const refresh = () => {
 	}
 }
 
+// Returns a "Kill all" BitBar element
+const killAll = (numContainers) => {
+	return {
+		text: `Kill ${numContainers ? numContainers : 'all'} containers...`,
+		bash: 'docker stop $(docker ps -aq)',
+		color: colors[RED]
+	}
+}
+
 const containerFormatter = container => {
 	// Build basic submenu (i.e. container details)
 	const submenu = [
@@ -177,6 +186,8 @@ async function dockerps() {
 			bitbar.sep,
 			// Individual container status in the dropdown
 			...containers,
+			bitbar.sep,
+			killAll(containers.length),
 			bitbar.sep,
 			refresh()
 		])
