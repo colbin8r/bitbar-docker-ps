@@ -65,5 +65,5 @@ echo "Plugin refreshed."
 
 # Delete this script!
 echo "Deleting installer..."
-# rm -- "$INSTALLER_PATH"
+rm -- "$INSTALLER_PATH"
 echo "Installer deleted."
