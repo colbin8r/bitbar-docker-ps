@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env /usr/local/bin/node
 
 // Include BitBar metadata like this at the top of the file
 // (commented out, of course):
