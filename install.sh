@@ -29,14 +29,14 @@ fi
 # Go to the BitBar plugins directory
 cd "$(defaults read com.matryer.BitBar pluginsDirectory)"
 
+# If already installed, check for version updates
 if [ -d "bitbar-docker-ps" ]; then
-	# If already installed, check for version updates
 	cd bitbar-docker-ps
 	echo "Updating bitbar-docker-ps..."
 	git pull origin master --quiet
 	echo "Updated successfully."
+# If not installed, clone the repository
 else
-	# If not installed, clone the repository
 	echo "Downloading bitbar-docker-ps..."
 	git clone https://github.com/colbin8r/bitbar-docker-ps --quiet
 	echo "Downloaded successfully."
