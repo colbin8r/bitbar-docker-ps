@@ -15,6 +15,10 @@ A plugin for <a href="https://getbitbar.com/">BitBar</a> to display the running
 	<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly" /></a>
 </p>
 
+<p align="center">
+	<strong>Install:</strong> <code>curl https://raw.githubusercontent.com/colbin8r/bitbar-docker-ps/master/install.sh | bash</code>
+</p>
+
 ---
 
 ## Features
@@ -27,6 +31,17 @@ A plugin for <a href="https://getbitbar.com/">BitBar</a> to display the running
 - [X] Refreshes every 10 seconds
 
 ## Installation
+
+### Easy Installation
+
+Make sure you have `node`, `npm`, and `docker, then install with the bundled install script:
+```sh
+$ curl https://raw.githubusercontent.com/colbin8r/bitbar-docker-ps/master/install.sh | bash
+```
+
+Don't forget to refresh BitBar to see the plugin immediately.
+
+### Manual Installation
 
 Requires Docker, for obvious reasons.
 
@@ -83,3 +98,7 @@ $ rm -rf bitbar-docker-ps
 **Hollow Green Circle:** `bitbar-docker-ps` connected to Docker on your machine, but there aren't any containers running.
 
 **Red Circle:** `bitbar-docker-ps` couldn't connect to Docker on your machine. Open the dropdown to see error information.
+
+## Troubleshooting
+
+**Problems finding `node`**: You may have to monkey-patch `dockerps.10s.js` to point to your node binary. You can find your node binary with `which -a node`. Change the shebang at the top of `dockerps.10s.js` to point to your node binary path.
