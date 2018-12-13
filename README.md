@@ -16,7 +16,8 @@ A plugin for <a href="https://getbitbar.com/">BitBar</a> to display the running
 </p>
 
 <p align="center">
-	<strong>Install:</strong> <code>curl https://raw.githubusercontent.com/colbin8r/bitbar-docker-ps/master/install.sh | bash</code>
+	<strong><a href="bitbar://openPlugin?src=https://raw.githubusercontent.com/colbin8r/bitbar-docker-ps/master/install.sh
+">:sparkles: Install with BitBar</a></strong>
 </p>
 
 ---
@@ -33,6 +34,11 @@ A plugin for <a href="https://getbitbar.com/">BitBar</a> to display the running
 ## Installation
 
 ### Easy Installation
+
+**[:sparkles: Install with BitBar](bitbar://openPlugin?src=https://raw.githubusercontent.com/colbin8r/bitbar-docker-ps/master/install.sh
+)**
+
+---
 
 Make sure you have `node`, `npm`, and `docker, then install with the bundled install script:
 ```sh
