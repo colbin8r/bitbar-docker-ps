@@ -12,19 +12,21 @@
 INSTALLER_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 INSTALLER_PATH="$INSTALLER_DIR/$(basename $0)"
 
-# Check that node is available
-if ! [ -x "$(command -v node)" ]; then
-	echo "node was not found!"
-	exit 1
-# Check that npm is available
-elif ! [ "$(command -v npm)" ]; then
-	echo "npm was not found!"
-	exit 1
+# Checks to node, npm, and docker are disabled for now
+# BitBar uses a new environment, so the user's $PATH won't carry over
+# # Check that node is available
+# if ! [ -x "$(command -v node)" ]; then
+# 	echo "node was not found!"
+# 	exit 1
+# # Check that npm is available
+# elif ! [ -x "$(command -v npm)" ]; then
+# 	echo "npm was not found!"
+# 	exit 1
 
-elif ! [ "$(command -v docker)" ]; then
-	echo "docker was not found!"
-	exit 1
-fi
+# elif ! [ -x "$(command -v docker)" ]; then
+# 	echo "docker was not found!"
+# 	exit 1
+# fi
 
 # Go to the BitBar plugins directory
 cd "$(defaults read com.matryer.BitBar pluginsDirectory)"
